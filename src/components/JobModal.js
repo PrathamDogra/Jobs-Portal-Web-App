@@ -19,7 +19,6 @@ const styles = makeStyles((theme) => ({
   root: {
     margin: 0,
     padding: theme.spacing(2),
-    // width: "1000px",
   },
   closeButton: {
     position: "absolute",

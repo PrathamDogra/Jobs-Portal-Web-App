@@ -1,6 +1,4 @@
 import {
-  CREATE_JOB,
-  DELETE_JOB,
   GET_JOB,
   GET_ALL_JOBS,
   SET_SHOW_JOB_DETAILS,

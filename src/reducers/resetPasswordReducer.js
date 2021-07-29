@@ -1,6 +1,5 @@
 import {
   GET_RESET_PASSWORD_TOKEN,
-  CHANGE_PASSWORD_ERROR,
   INVALID_EMAIL,
 } from "../actions/resetPasswordActionType";
 
@@ -9,7 +8,10 @@ const intialState = {
   invalidEmail: false,
 };
 
-export default function resetPasswordReducer(state = intialState, { type, payload }) {
+export default function resetPasswordReducer(
+  state = intialState,
+  { type, payload }
+) {
   switch (type) {
     case GET_RESET_PASSWORD_TOKEN:
       return {

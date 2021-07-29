@@ -90,9 +90,6 @@ function JobDetails() {
                 <Typography variant="body3" gutterBottom>
                   {jobDetails.description}
                 </Typography>
-                {/* <Typography variant="button" display="block" gutterBottom>
-                  {jobDetails.location}
-                </Typography> */}
                 <div style={{ display: "flex", margin: "5px" }}>
                   <Avatar>
                     <LocationOnIcon className={classes.icon} />
