@@ -9,7 +9,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import NotInterestedIcon from "@material-ui/icons/NotInterested";
 import Avatar from "@material-ui/core/Avatar";
-import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
+import LocationOnIcon from "@material-ui/icons/LocationOnOutlined";
 import { setShowJobDetails, setJobIdSelected } from "../actions/jobAction";
 import JobModal from "./JobModal";
 
@@ -32,6 +32,9 @@ const useStyles = makeStyles({
   },
   margin: {
     margin: "0 10px",
+  },
+  icon: {
+    color: "black",
   },
 });
 
@@ -95,7 +98,7 @@ const Jobs = () => {
                   </Typography>
                   <div style={{ display: "flex", margin: "5px" }}>
                     <Avatar>
-                      <LocationOnOutlinedIcon />
+                      <LocationOnIcon className={classes.icon} />
                     </Avatar>
                     <div style={{ margin: "3px" }}>
                       <Typography gutterBottom variant="h5" component="h4">

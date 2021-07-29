@@ -19,7 +19,7 @@ import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import AnnouncementIcon from "@material-ui/icons/Announcement";
 import PersonIcon from "@material-ui/icons/Person";
-import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
+import LocationOnIcon from "@material-ui/icons/LocationOnOutlined";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -45,6 +45,9 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
     margin: "48px",
+  },
+  icon: {
+    color: "black",
   },
 }));
 
@@ -92,7 +95,7 @@ function JobDetails() {
                 </Typography> */}
                 <div style={{ display: "flex", margin: "5px" }}>
                   <Avatar>
-                    <LocationOnOutlinedIcon />
+                    <LocationOnIcon className={classes.icon} />
                   </Avatar>
                   <div style={{ margin: "3px" }}>
                     <Typography gutterBottom variant="h5" component="h4">
