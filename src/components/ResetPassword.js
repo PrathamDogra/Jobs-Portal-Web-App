@@ -40,8 +40,8 @@ const initialObj = {
 };
 
 const schema = yup.object().shape({
-  password: yup.string().required(),
-  confirmPassword: yup.string().required(),
+  password: yup.string().required().min(6),
+  confirmPassword: yup.string().required().min(6),
   token: yup.string().required(),
 });
 
@@ -140,7 +140,7 @@ export default function ResetPassword() {
                 }
                 helperText={
                   validationErrorList.indexOf("password") > -1
-                    ? "Enter Password"
+                    ? "Invalid Password"
                     : ""
                 }
               />
@@ -165,7 +165,7 @@ export default function ResetPassword() {
                 }
                 helperText={
                   validationErrorList.indexOf("confirmPassword") > -1
-                    ? "Enter Password"
+                    ? "Invalid Password"
                     : ""
                 }
               />
