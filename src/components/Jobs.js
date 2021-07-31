@@ -64,8 +64,6 @@ const Jobs = () => {
     }
   }, [jobs]);
 
-  console.log(jobs);
-
   return (
     <div className={classes.main}>
       <div className={classes.header}>

@@ -73,7 +73,6 @@ const schema = yup.object().shape({
 });
 
 const JobModal = ({ show, onHide }) => {
-  const classes = styles();
   const [job, setJob] = useState(intialObj);
   const [validationErrorList, setValidationErrorList] = useState([]);
 
