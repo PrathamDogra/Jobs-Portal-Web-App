@@ -5,6 +5,7 @@ import {
   SELECT_JOB,
   GET_ALL_CANDIDATES,
 } from "./jobActionType";
+
 import { setSnackbar } from "./snackbarAction";
 import axios from "axios";
 import { BASE_URL } from "../constants";

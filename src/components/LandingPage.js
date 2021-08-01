@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { useHistory, Link } from "react-router-dom";
 
-import image from "../assets/LandingImg.jpg";
+import { IMAGES_PATHS } from "../constants";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -75,7 +75,11 @@ export default function LandingPage() {
       </div>
       <div className={classes.headText}>
         <div className={classes.img}>
-          <img src={image} className={classes.img} alt="My Jobs portal" />
+          <img
+            src={`${IMAGES_PATHS.landing}`}
+            className={classes.img}
+            alt="My Jobs portal"
+          />
         </div>
         <div className={classes.textOnImage}>
           <h2> Welcome to MyJobs </h2>
